@@ -9,6 +9,8 @@ var chartType = 300;//valid values are 300, 900, 1800, 7200, 14400, and 86400
 var allChartData = {};
 var lastTickerData = [];
 var weightedAverageArr = {};
+var userFib = {canvasId:null, startX:null, startY:null, endX:null, endY:null, mouse:null};
+var chartImgData = null;
 var chartRange = 86400;// 24 hours
 var smaPeriod = 50;
 var emaPeriod = 30;
@@ -430,6 +432,34 @@ function initPage(){
         initAllChars();
     });
 	
+	// Main Chart mouse down. draw Fibonacci
+	$('#chartWrapper').on('mousedown', '.chart30Canvas', function (e) {
+		if(userFib.canvasId != null){// restore chart image without Fibonacci.
+			let c = document.getElementById(userFib.canvasId);
+			let ctx = c.getContext("2d");
+			ctx.putImageData(chartImgData,0,0);
+			userFib = {canvasId:null, startX:null, startY:null, endX:null, endY:null, mouse:null};
+			return;
+		}
+		userFib.canvasId = $(this).attr('id');
+		userFib.startX = e.pageX - this.offsetLeft - $(this).offset().left;
+		userFib.startY = e.pageY - this.offsetTop - $(this).offset().top;
+		userFib.mouse = "down";
+//console.log(userFib.canvasId + " - " + userFib.startX + " " + userFib.startY);
+		let c = document.getElementById(userFib.canvasId);
+		let ctx = c.getContext("2d");
+		chartImgData = ctx.getImageData(0,0,c.width,c.height);// save chart image without Fibonacci
+	});
+	
+	// Main Chart mouse up. draw Fibonacci
+	$('#chartWrapper').on('mouseup', '.chart30Canvas', function (e) {
+		if(userFib.canvasId == null){
+			return;
+		}
+		userFib.mouse = "up";
+//console.log(userFib.endX + " " + userFib.endY);
+	});
+	
 	// Main Chart mouse over
     $('#chartWrapper').on('mousemove', '.canvasContainer', function (e) {
 	    let posX = e.pageX - this.offsetLeft - $(".canvasContainer").offset().left;
@@ -508,6 +538,14 @@ function initPage(){
 				$("#" + pair + "Chart #chartCrosshairH").css('top', crosshairV).css('display', 'block');
 			}
 		}
+		
+		// check if user draw Fibonacci
+		if(userFib.mouse == "down"){
+			userFib.endX = posX;
+			userFib.endY = e.pageY - this.offsetTop - $(this).offset().top;
+//console.log(userFib.canvasId + " - " +userFib.endX + " " + userFib.endY);
+			drawFibonnaci();
+		}
     });
     //$('.canvasContainer').mouseout(function() { 
 	$('#chartWrapper').on('mouseout', '.canvasContainer', function (e) {
@@ -517,6 +555,63 @@ function initPage(){
         $(".chartCrosshairH").css('display', 'none');
         $(".chartCrosshairV").css('display', 'none');
     });
+}
+
+function drawFibonnaci(){
+	let c = document.getElementById(userFib.canvasId);
+	let ctx = c.getContext("2d");
+	ctx.putImageData(chartImgData,0,0);// restore chart image without Fibonacci.
+	let scaleFactor = window.devicePixelRatio;
+	let fibLineColor = "rgba(175,100,100,0.75)";
+	ctx.lineWidth = 1 * scaleFactor;
+	let marginLeft = userFib.startX;//65 * scaleFactor;
+	let height = c.height;
+	//let width = c.width;
+	let marginBottom = height - userFib.startY;//60;
+	let top = 0.01504;//0;
+	let bottom = 0.0143;//1000000;
+	let chartHigh = top;
+	let chartLow = bottom;
+	
+	let marginTop = userFib.endY * scaleFactor;//30 * scaleFactor;
+	let vScale = (height - (marginTop + marginBottom)) / (top - bottom);
+	let shft = Math.floor(bottom * vScale - marginBottom);
+	ctx.fillStyle = fibLineColor;
+	let fibPrice;
+	x = marginLeft;
+	w = c.width - x - 60;
+	h = 1;
+	fibPrice = chartLow;
+	y = Math.floor(height - (fibPrice * vScale));
+	ctx.fillRect(x, y + shft, w, h);
+	ctx.fillText("0%", x, y + shft - 1);
+	fibPrice = chartLow + ((chartHigh - chartLow) * 0.236);
+	y = Math.floor(height - (fibPrice * vScale));
+	ctx.fillRect(x, y + shft, w, h);
+	ctx.fillText("23.6%", x, y + shft - 1);
+	fibPrice = chartLow + ((chartHigh - chartLow) * 0.382);
+	y = Math.floor(height - (fibPrice * vScale));
+	ctx.fillRect(x, y + shft, w, h);
+	ctx.fillText("38.2%", x, y + shft - 1);
+	fibPrice = chartLow + ((chartHigh - chartLow) * 0.5);
+	y = Math.floor(height - (fibPrice * vScale));
+	ctx.fillRect(x, y + shft, w, h);
+	ctx.fillText("50%", x, y + shft - 1);
+	fibPrice = chartLow + ((chartHigh - chartLow) * 0.618);
+	y = Math.floor(height - (fibPrice * vScale));
+	ctx.fillRect(x, y + shft, w, h);
+	ctx.fillText("61.8%", x, y + shft - 1);
+	fibPrice = chartHigh;
+	y = Math.floor(height - (fibPrice * vScale));
+	ctx.fillRect(x, y + shft, w, h);
+	ctx.fillText("100%", x, y + shft - 1);
+	ctx.beginPath();
+	//ctx.moveTo(fibLowX + marginLeft, height - chartLow * vScale + shft);
+	//ctx.lineTo(fibHighX + marginLeft, height - chartHigh * vScale + shft);
+	ctx.moveTo(userFib.startX, userFib.startY);
+	ctx.lineTo(userFib.endX, userFib.endY);
+	ctx.strokeStyle = fibLineColor;
+	ctx.stroke();
 }
 
 function comparer(index) {
@@ -1283,6 +1378,15 @@ function candlestick(pair, data, left, right, chartType, dark, smaPeriod,
         ctx.strokeStyle = fibLineColor;
         ctx.stroke();
     }
+	
+	// if user fib save new image data
+	if(userFib.canvasId != null && userFib.canvasId.indexOf(pair) != -1){
+		let c = document.getElementById(userFib.canvasId);
+		let ctx = c.getContext("2d");
+		chartImgData = ctx.getImageData(0,0,c.width,c.height);
+		drawFibonnaci();
+	}
+	
     returnArray['detectArray'] = detectArray;
     returnArray['high'] = chartHigh;
     returnArray['low'] = chartLow;
