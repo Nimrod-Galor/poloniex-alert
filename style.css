@@ -1,6 +1,8 @@
 body{font-size:11px;}
-#pairsW{margin:0 0 0 20px;float:left;}
-.marketsFixed{position: fixed;height: 95%;overflow:auto;width:680px;}
+#main{clear: both;}
+#pairsW{position: fixed;right: 320px;top: 0;}
+#showhideW{position:fixed;}
+.marketsFixed{position:fixed;height: 95%;overflow:auto;margin-top:20px;width:300px;}
 .marketsTab{border:1px solid #b3d5d6;width:unset;}
 .marketsTab th{background-color:#b3d5d6;}
 .marketsTab tr input[type=text]{width:20px;text-align:center;border:0 none;}
@@ -13,7 +15,7 @@ body{font-size:11px;}
 .marketRow:hover{background-color:#dae7e6;}
 .neg{color:red !important;}
 .change{color:#27892f;}
-.chartButtons{margin:10px 47%;width:665px;font-size:11px;line-height:14px;}
+.chartButtons{margin:20px;font-size:11px;line-height:14px;}
 .chartButtons .group{float:left;margin-right:15px;}
 .chartButtons .group div{display:inline;margin-right:5px;}
 .button-group{display:inline-block;*display:inline;zoom:1;font-size:0;margin:0;padding:0;}
@@ -22,7 +24,7 @@ body{font-size:11px;}
 .button-group li .button{font-size:11px;border-radius:0;border:1px solid #91abac;border-left-width:0;color:#3a4449;background-color:#ffffff;background-image:-webkit-linear-gradient(#ffffff, #c4d5db);background-image:linear-gradient(#ffffff, #c4d5db);box-shadow:none;}
 .button-group li:first-child .button{border-radius:5px 0 0 5px;border-left-width:1px;}
 .button-group li:last-child .button{border-radius:0 5px 5px 0;}
-#chartWrapper{margin:35px 15px 300px 726px;}
+#chartWrapper{margin:60px 340px 300px 20px;}
 .wrapper{margin-bottom:25px;}
 .mainHeading .chartTitle{border-left:5px solid #ffab06;float:left;padding-left:7px;}
 .mainHeading .chartTitle .full{color:#3a4449;font-size:24px;font-weight:300;float:left;text-transform:uppercase;}
@@ -32,7 +34,8 @@ body{font-size:11px;}
 .bigChart .chart .currentChartRange{position:absolute;z-index:3;top:15px;left:40px;pointer-events:none;display:table-row;font-size:11px;line-height:initial;background-color:rgba(255, 255, 255, 0.75);}
 .bigChart .chart .currentChartRange .label{display:table-cell;padding-right:2px;color:#000;}
 .bigChart .chart .currentChartRange .info{display:table-cell;padding-right:6px;text-align:right;}
-.indicatorsW{margin:10px 45%;width:700px;font-size:11px;line-height:14px;}
+.indicatorsW{margin:10px 20px;font-size:11px;line-height:14px;}
+.indicatorsW ul{padding:0;}
 .indicatorsW li{display:inline-block;margin-right:25px;}
 .indicatorsW div{display:inline-block;}
 .indicatorsW .chartTextEntry{width:25px;}
@@ -45,7 +48,7 @@ body{font-size:11px;}
 .mainHeading .hilights .rowHilights .volume .vol1, .mainHeading .hilights .rowHilights .volume .vol2{font-weight:bold;}
 .alerts{float:left;margin:10px 20px;}
 .alerts input[type=text]{width:200px;margin-left:5px;border:0 none;}
-.alertsWrapper{position:fixed;bottom:0;width:1802px;background-color:#dedede;border:1px solid #dedede;padding:30px 0 0;right:15px;z-index:100;}
+.alertsWrapper{position:fixed;bottom:0;width:1802px;background-color:#dedede;border:1px solid #dedede;padding:30px 0 0;left:20px;z-index:100;}
 .alertsTog{position:absolute;background-color:#000;color:#fff;top:5px;right:10px;padding:0 10px 0;border-radius:3px;font-size:20px;font-weight:bolder;line-height:20px;cursor:pointer;}
 .alertsInfo{overflow-y:auto;max-height:260px;padding:10px 25px;background-color:#fff;line-height:25px;font-size:16px;}
 .clearAllAlerts{position:absolute;right:70px;top:5px;font-size:16px;text-decoration:underline;font-weight:bold;cursor:pointer;}
