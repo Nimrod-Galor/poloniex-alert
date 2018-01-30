@@ -1,6 +1,6 @@
 body{font-size:11px;}
 #pairsW{margin:0 0 0 20px;float:left;}
-.marketsFixed{position: fixed;height: 95%;overflow:auto;}
+.marketsFixed{position: fixed;height: 95%;overflow:auto;width:680px;}
 .marketsTab{border:1px solid #b3d5d6;width:unset;}
 .marketsTab th{background-color:#b3d5d6;}
 .marketsTab tr input[type=text]{width:20px;text-align:center;border:0 none;}
@@ -22,7 +22,7 @@ body{font-size:11px;}
 .button-group li .button{font-size:11px;border-radius:0;border:1px solid #91abac;border-left-width:0;color:#3a4449;background-color:#ffffff;background-image:-webkit-linear-gradient(#ffffff, #c4d5db);background-image:linear-gradient(#ffffff, #c4d5db);box-shadow:none;}
 .button-group li:first-child .button{border-radius:5px 0 0 5px;border-left-width:1px;}
 .button-group li:last-child .button{border-radius:0 5px 5px 0;}
-#chartWrapper{margin:35px 15px 300px 0;float:right;}
+#chartWrapper{margin:35px 15px 300px 726px;}
 .wrapper{margin-bottom:25px;}
 .mainHeading .chartTitle{border-left:5px solid #ffab06;float:left;padding-left:7px;}
 .mainHeading .chartTitle .full{color:#3a4449;font-size:24px;font-weight:300;float:left;text-transform:uppercase;}

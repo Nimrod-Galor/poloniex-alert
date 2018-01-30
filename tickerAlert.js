@@ -552,7 +552,7 @@ function insertChart(pair){
 	+ '<div id="hilights" class="hilights"><div class="rowHilights"><div class="lastPrice"><div class="name">Last Price</div><div class="info">' + lastTickerData[pair].last + '</div></div><div class="change"><div class="name">24hr Change</div><div class="info" class="' + chPosNeg + '">' + ch + '</div></div><div class="high"><div class="name">24hr High</div><div class="info">' + lastTickerData[pair].high24hr + '</div></div><div class="low"><div class="name">24hr Low</div><div class="info">' + lastTickerData[pair].low24hr + '</div></div></div><div class="rowHilights"><div class="volume"><div class="name">24hr Volume:</div><div class="info"><span class="vol1">' + lastTickerData[pair].baseVolume + '</span> <span class="name name1">' + split[0] + '</span> /  <span class="vol2">' + lastTickerData[pair].quoteVolume + '</span> <span class="name name2">' + split[0] + '</span></div></div></div></div></div>'
 	+ '<div class="bigChart"><div class="chart"><div id="' + pair + 'currentChartRange" class="currentChartRange"><div class="high label">High:</div><div class="high info"></div><div class="low label">Low:</div><div class="low info"></div></div>'
 	+ '<div id="' + pair + 'chartLoading"><p><i class="fa fa-refresh fa-spin"></i> Loading chart...</p></div><div id="' + pair + 'canvasContainer" class="canvasContainer">'
-	+ '<canvas id="' + pair + 'chart30Canvas" width="1800" style="width: 1800px; height: 450px;" height="450"></canvas>'
+	+ '<canvas id="' + pair + 'chart30Canvas" width="1800" class="chart30Canvas" style="width: 1800px; height: 450px;" height="450"></canvas>'
 	+ '<div id="mainChartInfo" class="mainChartInfo" style="display: none;"><table class="mainChartInfoTable"><tbody><tr><td class="description">Open:</td><td>0.00005635</td><td>&nbsp;</td><td class="description">Close:</td><td>0.00005670</td><td>&nbsp;</td><td class="description">High:</td><td>0.00005679</td><td>&nbsp;</td><td class="description">Low:</td><td>0.00005635</td></tr><tr><td class="description">Wtd Avg:</td><td>0.00005663</td><td>&nbsp;</td><td class="description">Vol (BTC):</td><td>1.0288</td><td>&nbsp;</td><td class="description">Vol (STR):</td><td>18167</td><td>&nbsp;</td><td class="description">Date:</td><td>Jan 27  04:35</td></tr></tbody></table></div>'
 	+ '<div id="crosshairHInfo" style="margin-top: -12px; top: 357px; display: none;" class="crosshairHInfo"><div id="crosshairHInfoTextContainer">0.00000085</div></div>'
 	+ '<div id="chartCrosshairH" class="chartCrosshairH" style="top: 357px; display: none;"></div>'
@@ -570,7 +570,7 @@ function initAllChars(){ // big chart
 	for(let x=0;x<userSettings.showMarkets.length;x++){
 		let pair = userSettings.showMarkets[x];
 		insertChart(pair);
-		setTimeout(function(){initCandleSticks(pair);}, x * 5000);
+		setTimeout(function(){initCandleSticks(pair);}, x * 500);
 	}
 }
 
@@ -633,12 +633,26 @@ function muteAlert(){
 	userSettings.muteAlert = document.getElementById("muteAlert").checked;
 }
 
+function resizeCharts() {
+    let docWidth = $('body').width();
+	let chartWidth = docWidth - 741;
+console.log("resizeCharts: " + chartWidth);    
+    //$('.chart30Canvass').css({width: chartWidth + "px"});
+	$('.chart30Canvas').each(function(){
+		$(this).width(chartWidth);
+	});
+	$('#alertsWrapper').width(chartWidth);
+	initAllChars();
+}
+
 $(document).ready(function() {
 	initPage();
 	getTickerInfo();
 	
 	$( window ).unload(function() { localStorage.setItem("userSettings", JSON.stringify(userSettings)) });// save User Settings
 });
+
+$(window).resize(function(){resizeCharts();});
 
 function candlestick(pair, data, left, right, chartType, dark, smaPeriod,
     emaPeriod, ema2Period, showSma, showEma, showEma2, showFib,
