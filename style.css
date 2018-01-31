@@ -1,8 +1,8 @@
 body{font-size:11px;}
 #main{clear: both;}
-#pairsW{position: fixed;right: 320px;top: 0;}
+#pairsW{position: fixed;right: 330px;top: 0;}
 #showhideW{position:fixed;}
-.marketsFixed{position:fixed;height: 95%;overflow:auto;margin-top:20px;width:300px;}
+.marketsFixed{position:fixed;height: 95%;overflow:auto;margin-top:20px;width:320px;}
 .marketsTab{border:1px solid #b3d5d6;width:unset;}
 .marketsTab th{background-color:#b3d5d6;}
 .marketsTab tr input[type=text]{width:20px;text-align:center;border:0 none;}
