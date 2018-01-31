@@ -94,6 +94,10 @@ function getTickerInfo(){
 				high24hr: d[pair]['high24hr'],
 				low24hr: d[pair]['low24hr']
 			};
+			
+			if(userSettings.showMarkets.indexOf(pair) != -1){
+				marketRowAddLink(pair);
+			}
 		}
 		initWebSockets();
 	});
@@ -304,16 +308,20 @@ function initPage(){
 	});
 	
 	// user changed market selection. update user setting.
-	$('#marketsTab input:checkbox').change(function() {
+	$('#marketsTab').on('change', 'input:checkbox', function() {
+	//$('#marketsTab input:checkbox').change(function() {
 		let pair = $(this).val();
         if(this.checked) {// user selected new market. display big chart
 			insertChart(pair);
+			marketRowAddLink(pair);
             userSettings.showMarkets.push(pair);
 			weightedAverageArr[pair] = [];
 			initCandleSticks(pair);
         }else{
+
 			let index = userSettings.showMarkets.indexOf(pair);
 			userSettings.showMarkets.splice(index, 1);
+			marketRowRemoveLink(pair);
 			if ('connection' in window){
 				window.connection.send(JSON.stringify({command: "unsubscribe", channel: pair}));
 			}
@@ -740,7 +748,7 @@ function muteAlert(){
 
 function resizeCharts() {
 	let chartWidth = $('.canvasContainer').width();
-console.log("resizeCharts: " + chartWidth);    
+//console.log("resizeCharts: " + chartWidth);    
     //$('.chart30Canvass').css({width: chartWidth + "px"});
 	$('.chart30Canvas').each(function(){
 		$(this).width(chartWidth);
@@ -748,6 +756,24 @@ console.log("resizeCharts: " + chartWidth);
 	});
 	$('#alertsWrapper').width(chartWidth);
 	refreshAllChart();
+}
+
+function marketRowAddLink(pair){
+	let id = "#marketRow" + pair;
+	let html = $(id + ' td:first').html();
+//console.log(html);
+	let newHtml = html.replace(">" + pair + "<", ' checked><a href="#' + pair + 'Chart">' + pair + '</a><');
+//console.log(newHtml);
+	$(id + ' td:first').html(newHtml);
+}
+
+function marketRowRemoveLink(pair){
+	let id = "#marketRow" + pair;
+	let html = $(id + ' td:first').html();
+console.log(html);
+	let newHtml = html.replace('><a href="#' + pair + 'Chart">' + pair + '</a><', ">" + pair + "<").replace(' checked=""', '');
+console.log(newHtml);
+	$(id + ' td:first').html(newHtml);
 }
 
 $(document).ready(function() {
