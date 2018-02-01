@@ -1,7 +1,7 @@
 var cp = {"7":"BTC_BCN","8":"BTC_BELA","10":"BTC_BLK","12":"BTC_BTCD","13":"BTC_BTM","14":"BTC_BTS","15":"BTC_BURST","20":"BTC_CLAM","25":"BTC_DGB","27":"BTC_DOGE","24":"BTC_DASH","28":"BTC_EMC2","31":"BTC_FLDC","32":"BTC_FLO","38":"BTC_GAME","40":"BTC_GRC","43":"BTC_HUC","50":"BTC_LTC","51":"BTC_MAID","58":"BTC_OMNI","61":"BTC_NAV","63":"BTC_NEOS","64":"BTC_NMC","69":"BTC_NXT","73":"BTC_PINK","74":"BTC_POT","75":"BTC_PPC","83":"BTC_RIC","89":"BTC_STR","92":"BTC_SYS","97":"BTC_VIA","98":"BTC_XVC","99":"BTC_VRC","100":"BTC_VTC","104":"BTC_XBC","108":"BTC_XCP","112":"BTC_XEM","114":"BTC_XMR","116":"BTC_XPM","117":"BTC_XRP","121":"USDT_BTC","122":"USDT_DASH","123":"USDT_LTC","124":"USDT_NXT","125":"USDT_STR","126":"USDT_XMR","127":"USDT_XRP","129":"XMR_BCN","130":"XMR_BLK","131":"XMR_BTCD","132":"XMR_DASH","137":"XMR_LTC","138":"XMR_MAID","140":"XMR_NXT","148":"BTC_ETH","149":"USDT_ETH","150":"BTC_SC","151":"BTC_BCY","153":"BTC_EXP","155":"BTC_FCT","158":"BTC_RADS","160":"BTC_AMP","162":"BTC_DCR","163":"BTC_LSK","166":"ETH_LSK","167":"BTC_LBC","168":"BTC_STEEM","169":"ETH_STEEM","170":"BTC_SBD","171":"BTC_ETC","172":"ETH_ETC","173":"USDT_ETC","174":"BTC_REP","175":"USDT_REP","176":"ETH_REP","177":"BTC_ARDR","178":"BTC_ZEC","179":"ETH_ZEC","180":"USDT_ZEC","181":"XMR_ZEC","182":"BTC_STRAT","183":"BTC_NXC","184":"BTC_PASC","185":"BTC_GNT","186":"ETH_GNT","187":"BTC_GNO","188":"ETH_GNO","189":"BTC_BCH","190":"ETH_BCH","191":"USDT_BCH","192":"BTC_ZRX","193":"ETH_ZRX","194":"BTC_CVC","195":"ETH_CVC","196":"BTC_OMG","197":"ETH_OMG","198":"BTC_GAS","199":"ETH_GAS","200":"BTC_STORJ"};
 var currencyNamesArray = {"1CR":"1CRedit","ABY":"ArtByte","AC":"AsiaCoin","ACH":"Altcoin Herald","ADN":"Aiden","AEON":"AEON Coin","AERO":"Aerocoin","AIR":"AIRcoin","APH":"AphroditeCoin","AUR":"Auroracoin","AXIS":"Axis","BALLS":"Snowballs","BANK":"BankCoin","BBL":"BitBlock","BBR":"Boolberry","BCC":"BTCtalkcoin","BCN":"Bytecoin","BDC":"Black Dragon Coin","BDG":"Badgercoin","BELA":"Bela","BITS":"Bitstar","BLK":"BlackCoin","BLOCK":"Blocknet","BLU":"BlueCoin","BNS":"BonusCoin","BONES":"Bones","BOST":"BoostCoin","BTC":"Bitcoin","BTCD":"BitcoinDark","BTCS":"Bitcoin-sCrypt","BTM":"Bitmark","BTS":"BitShares","BURN":"BurnerCoin","BURST":"Burst","C2":"Coin2.0","CACH":"CACHeCoin","CAI":"CaiShen","CC":"Colbert Coin","CCN":"Cannacoin","CGA":"Cryptographic Anomaly","CHA":"Chancecoin","CINNI":"CinniCoin","CLAM":"CLAMS","CNL":"ConcealCoin","CNMT":"Coinomat1","CNOTE":"C-Note","COMM":"CommunityCoin","CON":"Coino","CORG":"CorgiCoin","CRYPT":"CryptCoin","CURE":"Curecoin","CYC":"Conspiracy Coin","DGB":"DigiByte","DICE":"NeoDICE","DIEM":"Diem","DIME":"Dimecoin","DIS":"DistroCoin","DNS":"BitShares DNS","DOGE":"Dogecoin","DASH":"Dash","DRKC":"DarkCash","DRM":"Dreamcoin","DSH":"Dashcoin","DVK":"DvoraKoin","EAC":"EarthCoin","EBT":"EBTcoin","ECC":"ECCoin","EFL":"Electronic Gulden","EMC2":"Einsteinium","EMO":"EmotiCoin","ENC":"Entropycoin","eTOK":"eToken","EXE":"Execoin","FAC":"Faircoin","FCN":"Fantomcoin","FIBRE":"Fibrecoin","FLAP":"FlappyCoin","FLDC":"FoldingCoin","FLT":"FlutterCoin","FOX":"FoxCoin","FRAC":"Fractalcoin","FRK":"Franko","FRQ":"FairQuark","FVZ":"FVZCoin","FZ":"Frozen","FZN":"Fuzon","GAP":"Gapcoin","GDN":"Global Denomination","GEMZ":"GetGems","GEO":"GeoCoin","GIAR":"Giarcoin","GLB":"Globe","GAME":"GameCredits","GML":"GameleagueCoin","GNS":"GenesisCoin","GOLD":"GoldEagles","GPC":"GROUPCoin","GPUC":"GPU Coin","GRCX":"Gridcoin","GRS":"Groestlcoin","GUE":"Guerillacoin","H2O":"H2O Coin","HIRO":"Hirocoin","HOT":"Hotcoin","HUC":"Huntercoin","HVC":"Heavycoin","HYP":"HyperStake","HZ":"Horizon","IFC":"Infinitecoin","ITC":"Information Coin","IXC":"iXcoin","JLH":"jl777hodl","JPC":"JackpotCoin","JUG":"JuggaloCoin","KDC":"KlondikeCoin","KEY":"KeyCoin","LC":"Limecoin","LCL":"Limecoin Lite","LEAF":"Leafcoin","LGC":"Logicoin","LOL":"LeagueCoin","LOVE":"LOVEcoin","LQD":"LIQUID","LTBC":"LTBCoin","LTC":"Litecoin","LTCX":"LiteCoinX","MAID":"MaidSafeCoin","MAST":"MastiffCoin","MAX":"MaxCoin","MCN":"Moneta Verde","MEC":"Megacoin","METH":"CryptoMETH","MIL":"Millennium Coin","MIN":"Minerals","MINT":"Mintcoin","MMC":"MemoryCoin","MMNXT":"MMNXT","MMXIV":"Maieuticoin","MNTA":"Moneta","MON":"Monocle","MRC":"microCoin","MRS":"Marscoin","OMNI":"Omni","MTS":"Metiscoin","MUN":"Muniti","MYR":"Myriadcoin","MZC":"MazaCoin","N5X":"N5coin","NAS":"NAS","NAUT":"Nautiluscoin","NAV":"NAVCoin","NBT":"NuBits","NEOS":"Neoscoin","NL":"Nanolite","NMC":"Namecoin","NOBL":"NobleCoin","NOTE":"DNotes","NOXT":"NobleNXT","NRS":"NoirShares","NSR":"NuShares","NTX":"NTX","NXT":"NXT","NXTI":"NXTInspect","OPAL":"Opal","PAND":"PandaCoin","PAWN":"Pawncoin","PIGGY":"New Piggycoin","PINK":"Pinkcoin","PLX":"ParallaxCoin","PMC":"Premine","POT":"PotCoin","PPC":"Peercoin","PRC":"ProsperCoin","PRT":"Particle","PTS":"BitShares PTS","Q2C":"QubitCoin","QBK":"Qibuck","QCN":"QuazarCoin","QORA":"Qora","QTL":"Quatloo","RBY":"Rubycoin","RDD":"Reddcoin","RIC":"Riecoin","RZR":"Razor","SDC":"Shadow","SHIBE":"ShibeCoin","SHOPX":"ShopX","SILK":"Silkcoin","SJCX":"Storjcoin X","SLR":"SolarCoin","SMC":"SmartCoin","SOC":"SocialCoin","SPA":"Spaincoin","SQL":"Squallcoin","SRCC":"SourceCoin","SRG":"Surge","SSD":"Sonic","STR":"Stellar","SUM":"SummerCoin","SUN":"Suncoin","SWARM":"SWARM","SXC":"Sexcoin","SYNC":"Sync","SYS":"Syscoin","TAC":"Talkcoin","TOR":"TorCoin","TRUST":"TrustPlus","TWE":"Twecoin","UIS":"Unitus","ULTC":"Umbrella-LTC","UNITY":"SuperNET","URO":"Uro","USDE":"USDE","USDT":"Tether USD","UTC":"UltraCoin","UTIL":"UtilityCoin","UVC":"UniversityCoin","VIA":"Viacoin","VOOT":"VootCoin","VRC":"VeriCoin","VTC":"Vertcoin","WC":"WhiteCoin","WDC":"Worldcoin","WIKI":"Wikicoin","WOLF":"InsanityCoin","X13":"X13Coin","XAI":"Sapience AIFX","XAP":"API Coin","XBC":"BitcoinPlus","XC":"XCurrency","XCH":"ClearingHouse","XCN":"Cryptonite","XCP":"Counterparty","XCR":"Crypti","XDN":"DigitalNote","XDP":"Dogeparty","XHC":"Honorcoin","XLB":"Libertycoin","XMG":"Magi","XMR":"Monero","XPB":"Pebblecoin","XPM":"Primecoin","XRP":"Ripple","XSI":"Stability Shares","XST":"StealthCoin","XSV":"Silicon Valley Coin","XUSD":"CoinoUSD","XXC":"CREDS","YACC":"YACCoin","YANG":"Yangcoin","YC":"YellowCoin","YIN":"Yincoin","XVC":"Vcash","FLO":"Florincoin","XEM":"NEM","ARCH":"ARCHcoin","HUGE":"BIGcoin","GRC":"Gridcoin Research","IOC":"IO Digital Currency","INDEX":"CoinoIndex","ETH":"Ethereum","SC":"Siacoin","BCY":"BitCrystals","EXP":"Expanse","FCT":"Factom","BITUSD":"BitUSD","BITCNY":"BitCNY","RADS":"Radium","AMP":"Synereo AMP","VOX":"Voxels","DCR":"Decred","LSK":"Lisk","DAO":"The DAO","LBC":"LBRY Credits","STEEM":"STEEM","SBD":"Steem Dollars","ETC":"Ethereum Classic","REP":"Augur","ARDR":"Ardor","ZEC":"Zcash","STRAT":"Stratis","NXC":"Nexium","PASC":"PascalCoin","GNT":"Golem","GNO":"Gnosis","BCH":"Bitcoin Cash","ZRX":"0x","CVC":"Civic","OMG":"OmiseGO","GAS":"Gas","STORJ":"Storj","MNS1":"Mining Shares"};
 var tickerAPI_url = 'https://poloniex.com/public?command=returnTicker';
-//localStorage.removeItem("userSettings");
+localStorage.removeItem("userSettings");
 var userSettings = localStorage.userSettings ? JSON.parse(localStorage.getItem("userSettings")) : {smaPeriod:50, emaPeriod:30, ema2Period:20, showSma: false, showEma: true, showFib: false, bollingerBand: true, showEma2: true, showHide:false, muteAlert:false, showMarkets:[], marketAlerts:{BTC_AMP:{volume:0, bollinger:true},BTC_ARDR:{volume:0, bollinger:true},BTC_BCH:{volume:0, bollinger:true},BTC_BCN:{volume:0, bollinger:true},BTC_BCY:{volume:0, bollinger:true},BTC_BELA:{volume:0, bollinger:true},BTC_BLK:{volume:0, bollinger:true},BTC_BTCD:{volume:0, bollinger:true},BTC_BTM:{volume:0, bollinger:true},BTC_BTS:{volume:0, bollinger:true},BTC_BURST:{volume:0, bollinger:true},BTC_CLAM:{volume:0, bollinger:true},BTC_CVC:{volume:0, bollinger:true},BTC_DASH:{volume:0, bollinger:true},BTC_DCR:{volume:0, bollinger:true},BTC_DGB:{volume:0, bollinger:true},BTC_DOGE:{volume:0, bollinger:true},BTC_EMC2:{volume:0, bollinger:true},BTC_ETC:{volume:0, bollinger:true},BTC_ETH:{volume:0, bollinger:true},BTC_EXP:{volume:0, bollinger:true},BTC_FCT:{volume:0, bollinger:true},BTC_FLDC:{volume:0, bollinger:true},BTC_FLO:{volume:0, bollinger:true},BTC_GAME:{volume:0, bollinger:true},BTC_GAS:{volume:0, bollinger:true},BTC_GNO:{volume:0, bollinger:true},BTC_GNT:{volume:0, bollinger:true},BTC_GRC:{volume:0, bollinger:true},BTC_HUC:{volume:0, bollinger:true},BTC_LBC:{volume:0, bollinger:true},BTC_LSK:{volume:0, bollinger:true},BTC_LTC:{volume:0, bollinger:true},BTC_MAID:{volume:0, bollinger:true},BTC_NAV:{volume:0, bollinger:true},BTC_NEOS:{volume:0, bollinger:true},BTC_NMC:{volume:0, bollinger:true},BTC_NXC:{volume:0, bollinger:true},BTC_NXT:{volume:0, bollinger:true},BTC_OMG:{volume:0, bollinger:true},BTC_OMNI:{volume:0, bollinger:true},BTC_PASC:{volume:0, bollinger:true},BTC_PINK:{volume:0, bollinger:true},BTC_POT:{volume:0, bollinger:true},BTC_PPC:{volume:0, bollinger:true},BTC_RADS:{volume:0, bollinger:true},BTC_REP:{volume:0, bollinger:true},BTC_RIC:{volume:0, bollinger:true},BTC_SBD:{volume:0, bollinger:true},BTC_SC:{volume:0, bollinger:true},BTC_STEEM:{volume:0, bollinger:true},BTC_STORJ:{volume:0, bollinger:true},BTC_STR:{volume:0, bollinger:true},BTC_STRAT:{volume:0, bollinger:true},BTC_SYS:{volume:0, bollinger:true},BTC_VIA:{volume:0, bollinger:true},BTC_VRC:{volume:0, bollinger:true},BTC_VTC:{volume:0, bollinger:true},BTC_XBC:{volume:0, bollinger:true},BTC_XCP:{volume:0, bollinger:true},BTC_XEM:{volume:0, bollinger:true},BTC_XMR:{volume:0, bollinger:true},BTC_XPM:{volume:0, bollinger:true},BTC_XRP:{volume:0, bollinger:true},BTC_XVC:{volume:0, bollinger:true},BTC_ZEC:{volume:0, bollinger:true},BTC_ZRX:{volume:0, bollinger:true},ETH_BCH:{volume:0, bollinger:true},ETH_CVC:{volume:0, bollinger:true},ETH_ETC:{volume:0, bollinger:true},ETH_GAS:{volume:0, bollinger:true},ETH_GNO:{volume:0, bollinger:true},ETH_GNT:{volume:0, bollinger:true},ETH_LSK:{volume:0, bollinger:true},ETH_OMG:{volume:0, bollinger:true},ETH_REP:{volume:0, bollinger:true},ETH_STEEM:{volume:0, bollinger:true},ETH_ZEC:{volume:0, bollinger:true},ETH_ZRX:{volume:0, bollinger:true},USDT_BCH:{volume:0, bollinger:true},USDT_BTC:{volume:0, bollinger:true},USDT_DASH:{volume:0, bollinger:true},USDT_ETC:{volume:0, bollinger:true},USDT_ETH:{volume:0, bollinger:true},USDT_LTC:{volume:0, bollinger:true},USDT_NXT:{volume:0, bollinger:true},USDT_REP:{volume:0, bollinger:true},USDT_STR:{volume:0, bollinger:true},USDT_XMR:{volume:0, bollinger:true},USDT_XRP:{volume:0, bollinger:true},USDT_ZEC:{volume:0, bollinger:true},XMR_BCN:{volume:0, bollinger:true},XMR_BLK:{volume:0, bollinger:true},XMR_BTCD:{volume:0, bollinger:true},XMR_DASH:{volume:0, bollinger:true},XMR_LTC:{volume:0, bollinger:true},XMR_MAID:{volume:0, bollinger:true},XMR_NXT:{volume:0, bollinger:true},XMR_ZEC:{volume:0, bollinger:true}}};
 var marketSubscription = [];
 var chartStartDate, chartEndDate;
@@ -94,10 +94,6 @@ function getTickerInfo(){
 				high24hr: d[pair]['high24hr'],
 				low24hr: d[pair]['low24hr']
 			};
-			
-			if(userSettings.showMarkets.indexOf(pair) != -1){
-				marketRowAddLink(pair);
-			}
 		}
 		initWebSockets();
 	});
@@ -110,10 +106,6 @@ function orderBookEvent(msg){
 		var arg = msg[2][i];
 		switch (arg[0]){
 			case "t":// newTrade
-				/*if(!(pair in allChartData)){// check that we initiated this chart type
-					return;
-				}*/
-
 				needUpdate = true;
 				let rate = parseFloat(arg[3]);
 				let amount = parseFloat(arg[4]);
@@ -189,7 +181,6 @@ function tickerEvent(args, kwargs) {
 			setTimeout(function(){
 				row.removeClass(priceChange);
 			}, 600);
-			
 		}
 	}
 	
@@ -205,8 +196,6 @@ function tickerEvent(args, kwargs) {
         low24hr: args[9]
     };
 
-	
-	
 	if(userSettings.showMarkets.indexOf(args[0]) != -1){// update hilights
 //console.log("update hilights " + JSON.stringify(lastTickerData[args[0]]) );
 		let pair = args[0];
@@ -214,9 +203,7 @@ function tickerEvent(args, kwargs) {
 		var ch =  exactRound(lastTickerData[args[0]].percentChange * 100,2);
 		var chPosNeg = '';
 		if (ch < 0) { chPosNeg = 'neg';}
-		if (ch >= 0) {
-			ch = String('+') + ch;
-		}
+		if (ch >= 0) { ch = String('+') + ch; }
 		$('#' + pair + 'Chart .hilights .lastPrice .info').html(lastTickerData[args[0]].last);
 		$('#' + pair + 'Chart .hilights .change .info').html(ch);
 		$('#' + pair + 'Chart .hilights .change .info').removeClass('neg').addClass(chPosNeg);
@@ -227,9 +214,7 @@ function tickerEvent(args, kwargs) {
 		$('#' + pair + 'Chart .hilights .volume .info .vol1').html(lastTickerData[args[0]].baseVolume);
 		$('#' + pair + 'Chart .hilights .volume .info .vol2').html(lastTickerData[args[0]].quoteVolume);
 	}
-	
 }
-
 
 function showHideMarketsChange(){
 	userSettings.showHide = document.getElementById("showHideCb").checked;
@@ -276,12 +261,7 @@ function initPage(){
 	// set show hide markets by user setting
 	$("#showHideCb").prop('checked', userSettings.showHide);
 	showHideMarkets();
-	
-	/*/ populate input text with user settings vol alert, bollinger alert
-	$('#marketsTab > tbody > tr input:text').each(function() {
-		$(this).val(userSettings.marketAlerts[$(this).data("pair")][$(this).data("type")]);
-	});*/
-	
+
 	// toggle alert info hide/show
 	$("#alertsTog").click(function(){
 		$("#alertsInfo").toggle(100, function(){
@@ -293,9 +273,16 @@ function initPage(){
 		});
 	});
 	
-	// check user selected markets
+	// set user selected markets
 	$('#marketsTab input:checkbox').each(function() {
-		$(this).prop('checked', userSettings.showMarkets.indexOf($(this).data("pair")) != -1);
+		//$(this).prop('checked', userSettings.showMarkets.indexOf($(this).data("pair")) != -1);
+		if(userSettings.showMarkets.indexOf($(this).data("pair")) != -1){// selected market
+			let pair = $(this).data("pair");
+			let html = '<label><input type="checkbox" data-pair="' + pair + '" value="' + pair + '" checked><a href="#' + pair + 'Chart">' + pair + '</a></label>';
+			$(this).closest('td').html(html).closest('tr').on('dragstart', function(event){
+				event.originalEvent.dataTransfer.setData("text", event.target.id);
+			}).prop('draggable', true);
+		}
 	});
 	
 	// on change update user alerts settings 
@@ -313,15 +300,39 @@ function initPage(){
 		let pair = $(this).val();
         if(this.checked) {// user selected new market. display big chart
 			insertChart(pair);
-			marketRowAddLink(pair);
-            userSettings.showMarkets.push(pair);
+			//marketRow Add Link
+
+			let html = '<label><input type="checkbox" data-pair="' + pair + '" value="' + pair + '" checked><a href="#' + pair + 'Chart">' + pair + '</a></label>';
+			$(this).closest('td').html(html).closest('tr').on('dragstart', function(event){
+				//$.event.props.push('dataTransfer');
+				//drag(event);
+				event.originalEvent.dataTransfer.setData("text", event.target.id);
+			}).attr('draggable', true);
+
+			// get previews selected pair on market table
+			let prvPair = "";
+			$('#marketsTab input:checkbox').each(function() {
+				let tmpPair = $(this).data('pair');
+				if(tmpPair == pair){
+					return false;
+				}else if(this.checked){
+					prvPair = tmpPair;
+				}
+			});
+			let prvIndex = userSettings.showMarkets.indexOf(prvPair) + 1;
+			userSettings.showMarkets.splice(prvIndex, 0 , pair);
+			sortCharts();
+
 			weightedAverageArr[pair] = [];
 			initCandleSticks(pair);
         }else{
 
 			let index = userSettings.showMarkets.indexOf(pair);
 			userSettings.showMarkets.splice(index, 1);
-			marketRowRemoveLink(pair);
+			//marketRow Remove Link
+			let html = '<label><input type="checkbox" data-pair="' + pair + '" value="' + pair + '">' + pair + '</label>';
+			$(this).closest('td').html(html).closest('tr').off('dragstart').prop('draggable', false);
+
 			if ('connection' in window){
 				window.connection.send(JSON.stringify({command: "unsubscribe", channel: pair}));
 			}
@@ -339,19 +350,26 @@ function initPage(){
 		var rows = table.find('tbody tr').toArray().sort(comparer($(this).index()));
 		this.asc = !this.asc;
 		if (!this.asc){rows = rows.reverse();}
-		for (var i = 0; i < rows.length; i++){table.append(rows[i]);}
+		for (var i = 0; i < rows.length; i++){
+			table.append(rows[i]);
+		}
+		// sort user settings
+		userSettings.showMarkets = [];
+		$('#marketsTab input:checked').each(function(){
+			userSettings.showMarkets.push($(this).data('pair'));
+		});
+		
+		sortCharts();
 	});
 	// big chart controlls
-		$('.group.zoom button').click(function(){
+	$('.group.zoom button').click(function(){
 		var id = $(this).attr('id');
 		chartRange = id.substr(4, id.length) * 3600;
 		chartEndDate = Math.floor(new Date().getTime() / 1000);
 		chartStartDate = chartEndDate - chartRange;
 		$(this).parent().parent().find('.chartButtonActive').removeClass('chartButtonActive');
 		$(this).addClass('chartButtonActive');
-
 		initAllChars();
-//		saveExchangeSettings();
 	});
 	$('.group.candlesticks button').click(function(){
 		var id = $(this).attr('id');
@@ -359,7 +377,6 @@ function initPage(){
 		$(this).parent().parent().find('.chartButtonActive').removeClass('chartButtonActive');
 		$(this).addClass('chartButtonActive');
 		initAllChars();
-//		saveExchangeSettings();
 	});
 	// clear Alert click
 	$('body').on('click', '.clearAlert', function(){
@@ -440,7 +457,7 @@ function initPage(){
         initAllChars();
     });
 	
-	// Main Chart mouse down. draw Fibonacci
+	// Main Chart mouse down. Draw Fibonacci
 	$('#chartWrapper').on('mousedown', '.chart30Canvas', function (e) {
 		if(userFib.canvasId != null){// restore chart image without Fibonacci.
 			let c = document.getElementById(userFib.canvasId);
@@ -614,8 +631,6 @@ function drawFibonnaci(){
 	ctx.fillRect(x, y + shft, w, h);
 	ctx.fillText("100%", x, y + shft - 1);
 	ctx.beginPath();
-	//ctx.moveTo(fibLowX + marginLeft, height - chartLow * vScale + shft);
-	//ctx.lineTo(fibHighX + marginLeft, height - chartHigh * vScale + shft);
 	ctx.moveTo(userFib.startX, userFib.startY);
 	ctx.lineTo(userFib.endX, userFib.endY);
 	ctx.strokeStyle = fibLineColor;
@@ -639,9 +654,7 @@ function exactRound(num, decimals) {
 }
 
 function insertChart(pair){
-	if(document.getElementById(pair + "Chart") != null){
-		return;
-	}
+	if(document.getElementById(pair + "Chart") != null){return;}
 
 	let cw = $('#chartWrapper').width();
 //console.log(cw);
@@ -667,6 +680,46 @@ function insertChart(pair){
 	$("#chartWrapper").append(html);
 }
 
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drop(ev) {
+    ev.preventDefault();
+	let dragId = ev.dataTransfer.getData("text");
+	let dropObj = $(ev.target).closest('tr');
+	let dropId = dropObj.attr('id');
+console.log("dragId: " + dragId + " - dropId: " + dropId);
+	if(dropId == dragId){
+		return;
+	}
+	let dragObj = $('#' + dragId);
+	let dragPair = dragObj.data('pair');
+	let dropPair = dropObj.data('pair');
+	
+	let posY =  ev.pageY - dropObj.offset().top;
+	if(posY >= 16){
+		// switch market table rows
+		dropObj.after(dragObj);
+		// switch big charts
+		$('#' + dropPair + 'Chart').after($('#' + dragPair + 'Chart'));
+	}else{
+		// switch market table rows
+		dropObj.before(dragObj);
+		// switch big charts
+		$('#' + dropPair + 'Chart').before($('#' + dragPair + 'Chart'));
+	}
+	
+	
+	// switch user setting arr
+	
+}
+
+
+
+
+
+
 function removeChart(pair){
 	$("#" + pair + "Chart").remove();
 }
@@ -680,7 +733,6 @@ function initAllChars(){ // big chart
 }
 
 function initCandleSticks(pair){
-	//let url = 'https://poloniex.com/public?command=returnChartData&currencyPair=' + pair + '&start=0&end=9999999999&period=' + chartType;
 	let sd = chartStartDate - (chartStartDate % chartType) - (chartType * 30);
 	let url = 'https://poloniex.com/public?command=returnChartData&currencyPair=' + pair + '&start=' + sd + '&end=9999999999&period=' + chartType;
 //console.log(url);
@@ -688,10 +740,10 @@ function initCandleSticks(pair){
 //console.log(chartData);
 		allChartData[pair] = {};
 		allChartData[pair]['candleStick'] = chartData;
-		$('#' + pair + 'chartLoading').remove();//hideChartLoading();
+		$('#' + pair + 'chartLoading').remove();//hide Chart Loading
 		refreshChart(pair);
 		
-		if(marketSubscription.indexOf(pair) == -1){// init order book subscription
+		if(marketSubscription.indexOf(pair) == -1){// initiate order book subscription
 			marketSubscription.push(pair);
 			window.connection.send(JSON.stringify({command: "subscribe",channel: pair}));
 		}
@@ -724,6 +776,14 @@ function refreshChart(pair){
 	allChartData[pair]['returnArray'] = returnArray;
 }
 
+function sortCharts(){
+	for(let x=1;x<userSettings.showMarkets.length;x++){
+		let pair = "#" + userSettings.showMarkets[x] + "Chart";
+		let prvPair = "#" + userSettings.showMarkets[x-1] + "Chart";
+		$(prvPair).after($(pair));
+	}
+}
+
 function getChartWidth(){
 	var cw = $('#chartWrapper .chart').css('width');
 	cw = Number(cw.substr(0, cw.length-2)-2); // -2 to account for 1px border
@@ -748,8 +808,6 @@ function muteAlert(){
 
 function resizeCharts() {
 	let chartWidth = $('.canvasContainer').width();
-//console.log("resizeCharts: " + chartWidth);    
-    //$('.chart30Canvass').css({width: chartWidth + "px"});
 	$('.chart30Canvas').each(function(){
 		$(this).width(chartWidth);
 		$(this).prop('width', chartWidth);
@@ -758,23 +816,7 @@ function resizeCharts() {
 	refreshAllChart();
 }
 
-function marketRowAddLink(pair){
-	let id = "#marketRow" + pair;
-	let html = $(id + ' td:first').html();
-//console.log(html);
-	let newHtml = html.replace(">" + pair + "<", ' checked><a href="#' + pair + 'Chart">' + pair + '</a><');
-//console.log(newHtml);
-	$(id + ' td:first').html(newHtml);
-}
 
-function marketRowRemoveLink(pair){
-	let id = "#marketRow" + pair;
-	let html = $(id + ' td:first').html();
-console.log(html);
-	let newHtml = html.replace('><a href="#' + pair + 'Chart">' + pair + '</a><', ">" + pair + "<").replace(' checked=""', '');
-console.log(newHtml);
-	$(id + ' td:first').html(newHtml);
-}
 
 $(document).ready(function() {
 	initPage();
@@ -796,7 +838,6 @@ function candlestick(pair, data, left, right, chartType, dark, smaPeriod,
     var c = document.getElementById(canvasId);
     var ctx = c.getContext("2d");
     var scaleFactor = window.devicePixelRatio;
-    // scaleFactor = 1;
 
     if (scaleFactor > 1) {
         if (c.style.width < 10) {
